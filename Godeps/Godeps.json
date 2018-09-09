@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/Support-pp/discord-bot",
+	"ImportPath": "spGoBot",
 	"GoVersion": "go1.10",
 	"GodepVersion": "v80",
 	"Deps": [
