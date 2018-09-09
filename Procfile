@@ -1,1 +1,2 @@
-worker: spGoBot
+web: discord-bot
+worker: worker
