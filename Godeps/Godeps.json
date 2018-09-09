@@ -1,0 +1,33 @@
+{
+	"ImportPath": "spGoBot",
+	"GoVersion": "go1.10",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/bwmarrin/discordgo",
+			"Comment": "v0.18.0-4-g73f6772",
+			"Rev": "73f6772a2b7cc95e29c462e4f15bf07cbe0d3854"
+		},
+		{
+			"ImportPath": "github.com/gorilla/websocket",
+			"Comment": "v1.2.0-44-g5ed622c",
+			"Rev": "5ed622c449da6d44c3c8329331ff47a9e5844f71"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/internal/subtle",
+			"Rev": "0709b304e793a5edb4a2c0145f281ecdc20838a4"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/nacl/secretbox",
+			"Rev": "0709b304e793a5edb4a2c0145f281ecdc20838a4"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/poly1305",
+			"Rev": "0709b304e793a5edb4a2c0145f281ecdc20838a4"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/salsa20/salsa",
+			"Rev": "0709b304e793a5edb4a2c0145f281ecdc20838a4"
+		}
+	]
+}
