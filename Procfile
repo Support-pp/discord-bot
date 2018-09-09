@@ -1,2 +1,1 @@
-web: spGoBot
-worker: worker
+worker: spGoBot
