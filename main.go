@@ -1,7 +1,6 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"os"
 	"os/signal"
@@ -12,19 +11,15 @@ import (
 	"strings"
 )
 
-var (
-	Token string
-)
 
-func init() {
-
-	flag.StringVar(&Token, "t", "", "Bot Token")
-	flag.Parse()
-}
 
 func main() {
 
-	dg, err := discordgo.New("Bot " + Token)
+	if (os.Getenv("TOKEN") == ""){
+		fmt.Println("No Token selected!")
+		return;
+	}
+	dg, err := discordgo.New("Bot " + os.Getenv("TOKEN"))
 	if err != nil {
 		fmt.Println("error creating Discord session,", err)
 		return
