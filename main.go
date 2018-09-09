@@ -49,50 +49,62 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	//CH Command
 	if m.Content == "!ch" {
 		commands.CMD_ch(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if m.Content == "!config" {
 		commands.CMD_config(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if m.Content == "!old" {
 		commands.CMD_old(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if m.Content == "!sp" {
 		commands.CMD_sp(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if m.Content == "!pro" {
 		commands.CMD_pro(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if strings.Contains(m.Content, "!db") {
 		commands.CMD_db(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if m.Content == "!rechte" {
 		commands.CMD_rechte(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if m.Content == "!frage" {
 		commands.CMD_frage(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if m.Content == "!ksp" {
 		commands.CMD_ksp(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if m.Content == "!sf" {
 		commands.CMD_sf(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if m.Content == "!uv" {
 		commands.CMD_uv(s,m);
+		RemoveMessage(s, m);
 	}
 
 	if m.Content == "!uc" {
 		commands.CMD_uc(s,m);
+		RemoveMessage(s, m);
 	}
 
 
@@ -100,4 +112,11 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		s.ChannelMessageSend(m.ChannelID, "Was willst du mit Java? Ich bin ein GO Bot. Meine Meinung zu Java = 💩")
 	}
 
+}
+
+func RemoveMessage(s *discordgo.Session, m *discordgo.MessageCreate)  {
+	err := s.ChannelMessageDelete(m.ChannelID, m.ID)
+	if (err != nil){
+		fmt.Println("can't remove message")
+	}
 }
