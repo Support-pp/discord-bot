@@ -112,6 +112,10 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		s.ChannelMessageSend(m.ChannelID, "Was willst du mit Java? Ich bin ein GO Bot. Meine Meinung zu Java = 💩")
 	}
 
+	if m.Content == "!go" {
+		s.ChannelMessageSend(m.ChannelID, "Jap, da gebe ich dir recht! GO ist der Boss im Haus... ")
+	}
+
 }
 
 func RemoveMessage(s *discordgo.Session, m *discordgo.MessageCreate)  {
