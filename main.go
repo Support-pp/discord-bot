@@ -107,7 +107,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		RemoveMessage(s, m);
 	}
 	
-	if m.Content == "!serverId" {
+	if m.Content == "!serverid" {
 		commands.CMD_serverId(s,m);
 		RemoveMessage(s, m);
 	}
