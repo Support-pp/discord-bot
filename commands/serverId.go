@@ -8,7 +8,7 @@ import "github.com/bwmarrin/discordgo"
 	Permission: all
  */
 
-func CMD_ch(s *discordgo.Session, m *discordgo.MessageCreate)  {
+func CMD_serverId(s *discordgo.Session, m *discordgo.MessageCreate)  {
 
 	cmdType := "ServerId"
 
