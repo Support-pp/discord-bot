@@ -106,6 +106,11 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		commands.CMD_uc(s,m);
 		RemoveMessage(s, m);
 	}
+	
+	if m.Content == "!serverid" {
+		commands.CMD_serverId(s,m);
+		RemoveMessage(s, m);
+	}
 
 
 	if m.Content == "!java" {
