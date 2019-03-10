@@ -92,6 +92,11 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		RemoveMessage(s, m);
 	}
 
+	if m.Content == "!msv" {
+		commands.CMD_msv(s,m);
+		RemoveMessage(s, m);
+	}
+
 	if m.Content == "!sf" {
 		commands.CMD_sf(s,m);
 		RemoveMessage(s, m);
