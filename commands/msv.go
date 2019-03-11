@@ -17,7 +17,7 @@ func CMD_msv(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 		Color:       0x4F545C, // Grey
 		Title:       "<:support:386227216159211531> **" + cmdType + "** | Support++",
-		Description: "Seid der Support++ Version benötigst du mindestens die SinusBot Version 1.0\n\nFür Linux:\nhttps://forum.sinusbot.com/resources/internal-alpha.1/",
+		Description: "Seid der Support++ Version 2.5.0 benötigst du mindestens die SinusBot Version 1.0\n\nFür Linux:\nhttps://forum.sinusbot.com/resources/internal-alpha.1/",
 	}
 	s.ChannelMessageSendEmbed(m.ChannelID, embed)
 
