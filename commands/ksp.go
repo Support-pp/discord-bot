@@ -6,7 +6,6 @@ import "github.com/bwmarrin/discordgo"
 	This is the kein support command.
 	Response: embed :: info
 	Permission: all
-
  */
 
 func CMD_ksp(s *discordgo.Session, m *discordgo.MessageCreate)  {
