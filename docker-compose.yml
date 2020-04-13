@@ -1,0 +1,4 @@
+version: "3"
+services:
+ discordbot:
+    image: docker.pkg.github.com/support-pp/discord-bot/discord-bot:latest
