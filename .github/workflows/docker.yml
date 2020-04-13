@@ -32,6 +32,7 @@ jobs:
         # Target Docker registry
         registry: docker.pkg.github.com
         # Location of Dockerfile, if not Dockerfile in root directory
+        githubOrg: support-pp
         # Docker build arguments in format KEY=VALUE,KEY=VALUE
         # Docker registry username
         username: ${{ github.actor }}
