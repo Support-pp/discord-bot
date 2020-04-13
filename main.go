@@ -7,7 +7,7 @@ import (
 	"syscall"
 
 	"github.com/bwmarrin/discordgo"
-	"spGoBot/commands"
+	"github.com/Support-pp/discord-bot/commands"
 	"strings"
 )
 
