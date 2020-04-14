@@ -12,7 +12,8 @@ import (
 
  */
 
-func CMD_db(s *discordgo.Session, m *discordgo.MessageCreate)  {
+func CMD_db(s *discordgo.Session, m *discordgo.MessageCreate, language string)  {
+	embed := &discordgo.MessageEmbed{}
 
 	cmdType := "MySQL Rechte nicht gesetzt"
 
@@ -25,7 +26,7 @@ func CMD_db(s *discordgo.Session, m *discordgo.MessageCreate)  {
 		scriptNameVar = scriptName[1]
 	}
 
-	embed := &discordgo.MessageEmbed{
+	embed = &discordgo.MessageEmbed{
 
 		Color:       0x4F545C, // Grey
 		Title:     "<:support:386227216159211531> **"+cmdType+"** | Support++",
