@@ -22,7 +22,6 @@ jobs:
     - name: Docker Build & Push
       uses: mr-smithers-excellent/docker-build-push@v3.0
       with:
-        dockerfile: Dockerfile
         # Name of the Docker image
         image: discord-bot/discord-bot
         # Tag override for Docker image
