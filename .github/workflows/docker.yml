@@ -25,6 +25,7 @@ jobs:
         # Name of the Docker image
         image: discord-bot/discord-bot
         # Tag override for Docker image
+        dockerfile: Dockerfile
         # Target Docker registry
         registry: docker.pkg.github.com
         # Location of Dockerfile, if not Dockerfile in root directory
