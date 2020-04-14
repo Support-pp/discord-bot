@@ -8,7 +8,6 @@ import "github.com/bwmarrin/discordgo"
 	Permission: all
 
  */
-
 func CMD_uv(s *discordgo.Session, m *discordgo.MessageCreate, language string)  {
 	embed := &discordgo.MessageEmbed{}
 
