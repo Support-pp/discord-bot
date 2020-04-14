@@ -24,18 +24,12 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v3.0
       with:
         # Name of the Docker image
-        image: discord-bot/discord-bot
+        image: supportpp/discord-bot
         # Tag override for Docker image
         dockerfile: Dockerfile
-        # Target Docker registry
-        registry: docker.pkg.github.com
-        # Location of Dockerfile, if not Dockerfile in root directory
-        githubOrg: support-pp
-        # Docker build arguments in format KEY=VALUE,KEY=VALUE
-        # Docker registry username
-        username: ${{ github.actor }}
-        # Docker registry password
-        password: ${{ secrets.GITHUB_TOKEN }} 
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }} 
   
     - name: Deploy docker container webhook
       uses: joelwmale/webhook-action@master
