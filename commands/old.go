@@ -13,12 +13,13 @@ import (
 
  */
 
-func CMD_old(s *discordgo.Session, m *discordgo.MessageCreate)  {
+func CMD_old(s *discordgo.Session, m *discordgo.MessageCreate, language string)  {
+	embed := &discordgo.MessageEmbed{}
 
 	cmdType := " Version wird nicht mehr unterstützt"
 	versionNr := getVersioFromGitHub()
 
-	embed := &discordgo.MessageEmbed{
+	embed = &discordgo.MessageEmbed{
 
 		Color:       0x4F545C, // Grey
 		Title:     "<:support:386227216159211531> **"+cmdType+"** | Support++",

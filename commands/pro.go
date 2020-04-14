@@ -9,11 +9,12 @@ import "github.com/bwmarrin/discordgo"
 
  */
 
-func CMD_pro(s *discordgo.Session, m *discordgo.MessageCreate)  {
+func CMD_pro(s *discordgo.Session, m *discordgo.MessageCreate, language string)  {
+	embed := &discordgo.MessageEmbed{}
 
 	cmdType := "Spende um ein PRO Mitglied zu werden"
 
-	embed := &discordgo.MessageEmbed{
+	embed = &discordgo.MessageEmbed{
 
 		Color:       0x4F545C, // Grey
 		Title:     "<:support:386227216159211531> **"+cmdType+"** | Support++",

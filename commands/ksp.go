@@ -8,11 +8,12 @@ import "github.com/bwmarrin/discordgo"
 	Permission: all
  */
 
-func CMD_ksp(s *discordgo.Session, m *discordgo.MessageCreate)  {
+func CMD_ksp(s *discordgo.Session, m *discordgo.MessageCreate, language string)  {
+	embed := &discordgo.MessageEmbed{}
 
 	cmdType := "Kein Support"
 
-	embed := &discordgo.MessageEmbed{
+	embed = &discordgo.MessageEmbed{
 
 		Color:       0x4F545C, // Grey
 		Title:       "<:support:386227216159211531> **" + cmdType + "** | Support++",
