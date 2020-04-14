@@ -26,6 +26,7 @@ jobs:
         # Name of the Docker image
         image: supportpp/discord-bot
         # Tag override for Docker image
+        tag: latest 
         dockerfile: Dockerfile
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
