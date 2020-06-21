@@ -30,7 +30,7 @@ func CMD_old(s *discordgo.Session, m *discordgo.MessageCreate, language string) 
 }
 
 func getVersioFromGitHub() string {
-	url := "https://raw.githubusercontent.com/Support-pp/Support-pp/master/VERSION"
+	url := "https://raw.githubusercontent.com/Support-pp/Support-pp/main/VERSION"
 	req, _ := http.NewRequest("GET", url, nil)
 	req.Header.Add("cache-control", "no-cache")
 	res, _ := http.DefaultClient.Do(req)
