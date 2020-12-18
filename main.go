@@ -67,6 +67,10 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		commands.CMD_tokenAbuse(s,m, language);
 		RemoveMessage(s, m);
 	}
+	if m.Content == "!dnd" {
+		commands.CMD_discordNotifyDocs(s,m, language);
+		RemoveMessage(s, m);
+	}
 	if m.Content == "!status" {
 		commands.CMD_status(s,m, language);
 		RemoveMessage(s, m);
