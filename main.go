@@ -127,6 +127,17 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		commands.CMD_serverId(s,m, language);
 		RemoveMessage(s, m);
 	}
+	
+	if m.Content == "!passwordsec" {
+		commands.CMD_passwordSec(s,m, language);
+		RemoveMessage(s, m);
+	}
+	
+	if m.Content == "!disnoti" {
+		commands.CMD_discordNotify(s,m, language);
+		RemoveMessage(s, m);
+	}
+	
 
 
 	if m.Content == "!java" {
