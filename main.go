@@ -58,6 +58,10 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		commands.CMD_ch(s,m, language);
 		RemoveMessage(s, m);
 	}
+	if m.Content == "!abuse" {
+		commands.CMD_tokenAbuse(s,m, language);
+		RemoveMessage(s, m);
+	}
 	if m.Content == "!status" {
 		commands.CMD_status(s,m, language);
 		RemoveMessage(s, m);
